@@ -2,12 +2,12 @@
 service: first_project
 
 # Name of the container image.
-image: your-user/first_project
+image: amias24/first_project
 
 # Deploy to these servers.
 servers:
   web:
-    - 192.168.0.1
+    - 167.71.76.177
   # job:
   #   hosts:
   #     - 192.168.0.1
@@ -18,14 +18,14 @@ servers:
 #
 # Note: If using Cloudflare, set encryption mode in SSL/TLS setting to "Full" to enable CF-to-app encryption.
 proxy:
-  ssl: true
-  host: app.example.com
+  ssl: false
+  host: amias.tech
 
 # Credentials for your image host.
 registry:
   # Specify the registry server, if you're not using Docker Hub
   # server: registry.digitalocean.com / ghcr.io / ...
-  username: your-user
+  username: amias24
 
   # Always use an access token rather than real password when possible.
   password:
