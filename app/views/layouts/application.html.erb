@@ -26,10 +26,10 @@
   <body class="container mx-auto py-6 ">
     <nav class="flex flex-row justify-end gap-5 mb-8">
       <% if user_signed_in? %>
-        <%= link_to 'Log out', destroy_user_session_path, class:"text-lg text-white rounded-lg px-4 py-2 bg-blue-500 hover:bg-blue-300", data: { turbo_method: :delete} %>
+        <%= link_to 'Log out', destroy_user_session_path, class:"", data: { turbo_method: :delete} %>
       <% else %>
-        <%= link_to 'Log in', new_user_session_path, class:"text-lg text-white rounded-lg px-2 py-1 bg-blue-500 hover:bg-blue-300" %>
-        <%= link_to 'Sign Up', new_user_registration_path, class:"text-lg text-white rounded-lg px-2 py-1 bg-blue-500 hover:bg-blue-300" %>
+        <%= link_to 'Log in', new_user_session_path, class:"" %>
+        <%= link_to 'Sign Up', new_user_registration_path, class:"" %>
       <% end %>
     </nav>      
 
